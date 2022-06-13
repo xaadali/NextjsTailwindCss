@@ -1,0 +1,34 @@
+.wrapper {
+  @apply w-full bg-bgColor p-2 px-6;
+  .container {
+    @apply w-full flex justify-between items-center;
+    .brandlogo {
+      @apply max-h-20 max-w-xs flex justify-center items-center;
+    }
+    .navItems {
+      @apply hidden lg:flex justify-between items-center gap-20;
+      .active {
+        .item {
+          @apply relative flex flex-col items-center text-white;
+          .text {
+            @apply text-base text-white;
+          }
+          .activebar {
+            @apply absolute flex items-center bg-amber-500 h-[2px] w-full left-0 bottom-[-80%];
+          }
+        }
+      }
+      .inactive {
+        .item {
+          @apply text-white;
+        }
+      }
+      .button {
+        @apply flex items-center gap-2;
+        span {
+          @apply text-white;
+        }
+      }
+    }
+  }
+}
