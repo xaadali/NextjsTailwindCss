@@ -1,5 +1,5 @@
 .wrapper {
-  @apply max-w-[1500px] w-full flex flex-col items-center lg:flex-row;
+  @apply max-w-[1500px] w-full flex flex-col items-center lg:flex-row py-8;
   .hire {
     @apply lg:max-w-[50%] w-full flex flex-col py-4  px-8 items-center lg:items-start;
     .heading {

@@ -1,7 +1,7 @@
 .wrapper {
-  @apply w-full bg-bgColor p-2 px-6;
+  @apply w-full flex justify-center bg-bgColor p-2 px-6 shadow-md;
   .container {
-    @apply w-full flex justify-between items-center;
+    @apply w-full max-w-[1600px] flex justify-between items-center;
     .brandlogo {
       @apply max-h-20 max-w-xs flex justify-center items-center;
     }
@@ -14,7 +14,7 @@
             @apply text-base text-white;
           }
           .activebar {
-            @apply absolute flex items-center bg-amber-500 h-[2px] w-full left-0 bottom-[-80%];
+            @apply absolute flex items-center bg-amber-500 h-[2px] w-full left-0 bottom-[-90%];
           }
         }
       }

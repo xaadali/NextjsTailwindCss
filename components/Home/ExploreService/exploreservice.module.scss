@@ -1,0 +1,27 @@
+.wrapper {
+  @apply w-full flex flex-col items-center;
+  .container {
+    @apply max-w-[1500px] w-full flex flex-col md:flex-wrap lg:flex-row lg:justify-center lg:gap-x-6 items-center gap-y-6;
+    .heading {
+      @apply max-w-[550px] w-full flex flex-col items-center mt-4;
+      label {
+        @apply w-full text-center text-white text-sm md:text-lg lg:text-3xl font-bold;
+      }
+      span {
+        @apply mt-4 text-center text-white;
+      }
+    }
+    .cardsection {
+      @apply max-w-[1500px] w-full flex flex-col md:flex-wrap lg:flex-row lg:justify-center lg:gap-x-6 items-center gap-y-6;
+      .card {
+        @apply max-w-[380px] min-h-[410px] p-4 py-6 flex flex-col items-start rounded-3xl bg-green-600;
+        .heading {
+          @apply w-full text-white font-rubik font-bold text-left px-4 text-xs md:text-sm lg:text-xl;
+        }
+        .text {
+          @apply w-full text-white text-left  px-4 mt-2 text-base;
+        }
+      }
+    }
+  }
+}
