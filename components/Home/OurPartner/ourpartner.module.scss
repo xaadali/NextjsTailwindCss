@@ -1,7 +1,7 @@
 .wrapper {
   @apply w-full flex flex-col items-center;
   .container {
-    @apply max-w-[1640px] w-full flex flex-col items-center py-4;
+    @apply max-w-[1500px] w-full flex flex-col items-center py-10;
     .heading {
       @apply max-w-[550px] w-full flex flex-col items-center mt-4;
       label {
@@ -12,9 +12,9 @@
       }
     }
     .marquelogo {
-      @apply w-full mt-4 flex items-center justify-center mb-32 lg:mb-52 bg-bgColor;
+      @apply w-full mt-4 flex items-center justify-center  bg-bgColor;
       .marquee {
-        @apply max-w-[1200px] bg-transparent h-[120px] flex items-center;
+        @apply max-w-[1200px] bg-transparent min-h-[120px] flex items-center;
         .fullLogo {
           @apply flex items-center mx-10;
         }

@@ -3,6 +3,8 @@ import Header from "./Header";
 import Cards from "./Cards";
 import ExploreService from "./ExploreService";
 import OurPartner from "./OurPartner";
+import FewReasons from "./FewReasons";
+import HowWork from "./HowWork";
 import { useWeb3 } from "@3rdweb/hooks";
 import Web3 from "web3";
 
@@ -38,6 +40,8 @@ const Home = () => {
       <Cards />
       <ExploreService />
       <OurPartner />
+      <FewReasons />
+      <HowWork />
     </>
   );
 };

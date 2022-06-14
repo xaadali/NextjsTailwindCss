@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./exploreservice.module.scss";
+import { FaMobileAlt, FaDesktop, FaLaptopMedical } from "react-icons/fa";
+import { GrSystem } from "react-icons/gr";
 const index = () => {
   return (
     <>
@@ -16,26 +18,47 @@ const index = () => {
           </div>
           <div className={styles.cardsection}>
             <div className={styles.card}>
-              <div className={styles.heading}>Mobile App Development</div>
-              <div className={styles.text}>
-                We provide complete iOS and Android application design,
-                development, integration and deployment.
+              <div className={styles.curdiv}>
+                <div className={styles.heading}>Mobile App Development</div>
+                <div className={styles.text}>
+                  We provide complete iOS and Android application design,
+                  development, integration and deployment.
+                </div>
+              </div>
+              <div className={styles.circlediv}>
+                <div className={styles.circleicon}>
+                  <FaMobileAlt className={styles.icon} />
+                </div>
               </div>
             </div>
             <div className={styles.card}>
-              <div className={styles.heading}>Web Development</div>
-              <div className={styles.text}>
-                We use a combination of the latest technologies to build secure,
-                robust, and scalable enterprise-class apps.
+              <div className={styles.curdiv}>
+                <div className={styles.heading}>Web Development</div>
+                <div className={styles.text}>
+                  We use a combination of the latest technologies to build
+                  secure, robust, and scalable enterprise-class apps.
+                </div>
+              </div>
+              <div className={styles.circlediv}>
+                <div className={styles.circleicon}>
+                  <FaDesktop className={styles.icon} />
+                </div>
               </div>
             </div>
             <div className={styles.card}>
-              <div className={styles.heading}>UI & UX Design</div>
-              <div className={styles.text}>
-                Get a UI & UX design or a prototype of your dream project before
-                you begin the main project. We have expertly skilled in-house
-                designers and partners that will make your UI & UX designs stand
-                out from the crowd.
+              <div className={styles.curdiv}>
+                <div className={styles.heading}>UI & UX Design</div>
+                <div className={styles.text}>
+                  Get a UI & UX design or a prototype of your dream project
+                  before you begin the main project. We have expertly skilled
+                  in-house designers and partners that will make your UI & UX
+                  designs stand out from the crowd.
+                </div>
+              </div>
+              <div className={styles.circlediv}>
+                <div className={styles.circleicon}>
+                  <FaLaptopMedical className={styles.icon} />
+                </div>
               </div>
             </div>
           </div>

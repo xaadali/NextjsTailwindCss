@@ -18,10 +18,14 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/public/Rectangle.svg')",
       },
+      clipPath: {
+        mypolygon: "polygon(0 46%, 100% 0, 100% 100%, 0% 100%)",
+      },
     },
   },
   plugins: [
     require("tailwind-scrollbar"),
+    require("tailwind-clip-path"),
     //  require("@tailwindcss/forms")
   ],
 };

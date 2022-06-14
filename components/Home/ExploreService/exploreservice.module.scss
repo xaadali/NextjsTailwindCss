@@ -1,5 +1,5 @@
 .wrapper {
-  @apply w-full flex flex-col items-center;
+  @apply w-full flex flex-col items-center py-4;
   .container {
     @apply max-w-[1500px] w-full flex flex-col md:flex-wrap lg:flex-row lg:justify-center lg:gap-x-6 items-center gap-y-6;
     .heading {
@@ -14,12 +14,37 @@
     .cardsection {
       @apply max-w-[1500px] w-full flex flex-col md:flex-wrap lg:flex-row lg:justify-center lg:gap-x-6 items-center gap-y-6;
       .card {
-        @apply max-w-[380px] min-h-[410px] p-4 py-6 flex flex-col items-start rounded-3xl bg-green-600;
-        .heading {
-          @apply w-full text-white font-rubik font-bold text-left px-4 text-xs md:text-sm lg:text-xl;
+        @apply min-w-[360px] max-w-[370px] min-h-[400px] relative  flex flex-col items-start rounded-tr-2xl rounded-tl-2xl rounded-br-3xl rounded-bl-3xl bg-green-700 hover:bg-themeColor hover:border-themeColor;
+        &:hover {
+          .circlediv {
+            @apply absolute top-10 w-full flex justify-start px-6;
+            .circleicon {
+              @apply bg-themeColor flex justify-center items-center w-16 h-16 rounded-full border-2 border-white cursor-pointer;
+
+              .icon {
+                @apply text-4xl text-white;
+              }
+            }
+          }
         }
-        .text {
-          @apply w-full text-white text-left  px-4 mt-2 text-base;
+        .curdiv {
+          @apply relative top-16 w-full h-[333px] bg-green-700 rounded rounded-b-3xl;
+          .heading {
+            @apply absolute -left-10 top-20 w-full text-white font-rubik font-bold text-left px-4 text-xs md:text-sm lg:text-xl;
+          }
+          .text {
+            @apply absolute top-36 w-full text-white text-left  px-4 mt-2 text-base;
+          }
+        }
+        .circlediv {
+          @apply absolute top-10 w-full flex justify-start px-6;
+          .circleicon {
+            @apply bg-bgColor hover:bg-themeColor flex justify-center items-center w-16 h-16 rounded-full border-2 border-white cursor-pointer;
+
+            .icon {
+              @apply text-4xl text-white;
+            }
+          }
         }
       }
     }
