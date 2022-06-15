@@ -53,8 +53,10 @@ module.exports = {
         },
       },
       animation: {
-        pulse: "wave 1s linear infinite",
-        outerPulse: "outerwave 1.1s linear infinite",
+        pulse: "wave 2s linear infinite",
+        outerPulse: "outerwave 2.1s linear infinite",
+        slowPulse: "wave 2.5s linear infinite",
+        slowOuterPulse: "outerwave 2.6s linear infinite",
       },
     },
   },
