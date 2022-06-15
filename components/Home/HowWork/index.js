@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./howwork.module.scss";
 import { FaWpforms } from "react-icons/fa";
 import { AiOutlineDatabase } from "react-icons/ai";
-import { BiClipboard, BiBox, GrTestDesktop } from "react-icons/bi";
+import { BiClipboard, BiBox } from "react-icons/bi";
 const HowWork = () => {
   return (
     <>
@@ -16,7 +16,7 @@ const HowWork = () => {
             <div className={styles.card}>
               <div className={styles.logo}>
                 <div className={styles.circlediv}>
-                  <FaWpforms className={styles.icon} />
+                  <BiClipboard className={styles.icon} />
                 </div>
               </div>
               <div className={styles.text}>

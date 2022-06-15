@@ -10,6 +10,7 @@ module.exports = {
         rubik: ["Rubik", "sans-serif"],
         risque: ["Risque", "cursive"],
       },
+
       colors: {
         bgColor: "#00523F",
         themeColor: "#FFC42A",
@@ -20,6 +21,40 @@ module.exports = {
       },
       clipPath: {
         mypolygon: "polygon(0 46%, 100% 0, 100% 100%, 0% 100%)",
+      },
+      keyframes: {
+        wave: {
+          "0%": {
+            boxShadow: "0px 0px 0px 5px rgb(50, 205, 50,1)",
+          },
+          "50%": {
+            boxShadow: "0px 0px 0px 15px rgba(50, 205, 50,0.5)",
+          },
+          "75%": {
+            boxShadow: "0px 0px 0px 20px rgba(50, 205, 50,0)",
+          },
+          "100%": {
+            boxShadow: "0px 0px 0px 0px rgba(50, 205, 50,0)",
+          },
+        },
+        outerwave: {
+          "0%": {
+            boxShadow: "0px 0px 0px 0px rgba(255,196,42, 1)",
+          },
+          "50%": {
+            boxShadow: "0px 0px 0px 25px rgba(255,196,42, 0)",
+          },
+          "75%": {
+            boxShadow: "0px 0px 0px 0px rgba(255,196,42, 0)",
+          },
+          "100%": {
+            boxShadow: "0px 0px 0px 0px rgba(0, 0, 0, 0)",
+          },
+        },
+      },
+      animation: {
+        pulse: "wave 1s linear infinite",
+        outerPulse: "outerwave 1.1s linear infinite",
       },
     },
   },
