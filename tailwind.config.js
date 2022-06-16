@@ -9,6 +9,9 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         rubik: ["Rubik", "sans-serif"],
         risque: ["Risque", "cursive"],
+        tai: ["Tai Heritage Pro", "serif"],
+        mulishs: ["Mulish", "sans-serif"],
+        poirets: ["Poiret One", "cursive"],
       },
 
       colors: {
