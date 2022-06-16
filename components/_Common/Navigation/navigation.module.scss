@@ -6,7 +6,7 @@
       @apply max-h-20 max-w-xs flex justify-center items-center;
     }
     .mobileIcon {
-      @apply flex lg:hidden;
+      @apply flex lg:hidden text-white text-3xl;
     }
     .navItems {
       @apply hidden lg:flex justify-between items-center gap-20;
