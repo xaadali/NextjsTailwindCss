@@ -5,7 +5,7 @@ import { ThirdwebWeb3Provider } from "@3rdweb/hooks";
 import "regenerator-runtime/runtime";
 import Layout from "../components/Dashboard/Dashboard";
 function MyApp({ Component, pageProps }) {
-  const supportedChainIds = [80001, 1];
+  const supportedChainIds = [80001, 1, 3, 4, 5];
   const connectors = {
     injected: {},
   };

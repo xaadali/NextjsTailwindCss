@@ -13,7 +13,7 @@ const Navigation = () => {
   };
   const { connectWallet, address, error } = useWeb3();
   // console.log(error, "error");
-  // console.log(address, "address");
+  console.log(address, "address");
   const router = useRouter();
 
   return (
@@ -21,7 +21,7 @@ const Navigation = () => {
       <div className={styles.wrapper}>
         <div className={styles.container}>
           <div className={styles.brandlogo}>
-            <Image src="/profile.svg" width={80} height={54} alt="Profile" />
+            <Image src="/brand-logo.svg" width={80} height={54} alt="Profile" />
           </div>
           {!isMobileMenu && (
             <FiMenu className={styles.mobileIcon} onClick={handleMobileNav} />
@@ -30,11 +30,11 @@ const Navigation = () => {
           <div className={styles.navItems}>
             <div
               className={
-                router.pathname === "/" ? styles.active : styles.inactive
+                router.pathname === "/home" ? styles.active : styles.inactive
               }
             >
               <div className={styles.item}>
-                <Link href="/" className={styles.text}>
+                <Link href="/home" className={styles.text}>
                   Home
                 </Link>
                 <div className={styles.activebar}></div>
@@ -66,11 +66,11 @@ const Navigation = () => {
             </div>
             <div
               className={
-                router.pathname === "/login" ? styles.active : styles.inactive
+                router.pathname === "/" ? styles.active : styles.inactive
               }
             >
               <div className={styles.item}>
-                <Link href="/login" className={styles.text}>
+                <Link href="/" className={styles.text}>
                   Login
                 </Link>
                 <div className={styles.activebar}></div>
