@@ -348,7 +348,15 @@ ContractConstant = {
 
 let ContractDemo;
 
-if (window.ethereum) {
+function GetProvider() {
+  // const { account } = useActiveWeb3React();
+  const web3 = new Web3();
+  web3.setProvider(web3.currentProvider);
+  return web3;
+}
+let web3 = GetProvider();
+
+if (web3.currentProvider) {
   const web3 = new Web3(window.ethereum);
   ContractDemo = new web3.eth.Contract(
     ContractConstant.abi,
@@ -363,5 +371,5 @@ if (window.ethereum) {
     ContractConstant.contractAddress
   );
 }
-
+console.log(web3);
 export default ContractDemo;
