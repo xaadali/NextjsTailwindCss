@@ -10,12 +10,12 @@
       .brand {
         @apply w-full flex flex-col items-start -mt-20;
         .footerlogo {
-          @apply max-w-[250px] w-full flex justify-center;
+          @apply max-w-[250px] w-full flex justify-start;
         }
         .socialicons {
-          @apply w-full;
+          @apply w-full flex justify-start;
           .icons {
-            @apply w-full flex items-center  justify-start px-8 gap-4 mb-4;
+            @apply w-full flex items-center  justify-start gap-4 mb-4;
             .icon {
               @apply text-white text-3xl hover:text-themeColor  cursor-pointer;
             }
@@ -32,9 +32,9 @@
         }
       }
       .addressinfo {
-        @apply w-full flex flex-col items-start -mt-4;
+        @apply w-full mt-4 flex flex-col items-start lg:-mt-4;
         label {
-          @apply text-white text-left font-bold font-mulishs text-3xl;
+          @apply text-white text-2xl text-left font-bold font-mulishs lg:text-3xl;
         }
         span {
           @apply text-themeColor text-lg;
