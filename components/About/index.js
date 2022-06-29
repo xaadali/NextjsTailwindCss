@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./about.module.scss";
 import { useWeb3 } from "@3rdweb/hooks";
-import { Formik, useFormik } from "formik";
+import { useFormik } from "formik";
 import * as Yup from "yup";
 import {
   getBalance,
@@ -27,6 +27,10 @@ const About = () => {
       balance: Yup.string().required("Enter Contract Address"),
     }),
     onSubmit: async (values, restProps) => {
+      if (!address) {
+        toast.error("Connect to metamask first");
+        return;
+      }
       let contractbalance = await getBalance(address);
       let getSupplycontract = await getTotalSupply();
       setcontractInfo({
@@ -47,6 +51,10 @@ const About = () => {
       amount: Yup.string().required("Enter Amount"),
     }),
     onSubmit: async (values, restProps) => {
+      if (!address) {
+        toast.error("Plz Connect to MetaMask First");
+        return;
+      }
       try {
         //converting entered amount into wei//
         let enteredAmount = Number(values.amount) * 1e9;

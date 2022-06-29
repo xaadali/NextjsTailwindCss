@@ -21,7 +21,16 @@ const Header = () => {
           </div>
           <div className={styles.headerlogo}>
             <div className={styles.logo}>
-              <Image src="/giphy.gif" width={500} height={400} alt="logo" />
+              <Image
+                src="/giphy.gif"
+                width={500}
+                height={400}
+                alt="logo"
+                loading="eager"
+                priority={true}
+                placeholder="blur"
+                blurDataURL="/giphy.gif"
+              />
             </div>
           </div>
         </div>
