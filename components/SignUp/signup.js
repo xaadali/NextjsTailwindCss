@@ -98,11 +98,11 @@ const Signup = () => {
               </div>
               <div className={styles.socialicon}>
                 <div className={styles.google}>
-                  <Image src="/google.svg" width={25} height={20} />
+                  <Image src="/google.svg" width={25} height={20} alt="" />
                   <span>Google Account</span>
                 </div>
                 <div className={styles.google}>
-                  <Image src="/facebook.svg" width={25} height={20} />
+                  <Image src="/facebook.svg" width={25} height={20} alt="" />
                   <span>Facebook Account</span>
                 </div>
               </div>

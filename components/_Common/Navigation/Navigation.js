@@ -52,6 +52,7 @@ const Navigation = () => {
                 <div className={styles.activebar}></div>
               </div>
             </div>
+
             <div
               className={
                 router.pathname === "/sign-up" ? styles.active : styles.inactive

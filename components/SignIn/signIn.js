@@ -83,7 +83,7 @@ const Signin = () => {
                 </div>
               </form>
               <div className={styles.signup}>
-                Don't have an Account ? &nbsp;
+                Dont have an Account ? &nbsp;
                 <Link href="/sign-up">SignUp</Link>
               </div>
             </div>

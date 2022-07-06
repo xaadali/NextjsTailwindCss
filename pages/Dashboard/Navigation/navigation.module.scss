@@ -1,0 +1,51 @@
+.wrapper {
+  @apply w-full min-h-[55px] bg-bgColor py-2 px-6 shadow-md;
+  .container {
+    @apply w-full flex items-center justify-between;
+    .left {
+      @apply flex items-center gap-x-3 pt-2 lg:pt-0;
+      .icon {
+        @apply text-white text-xl lg:text-3xl cursor-pointer hover:text-themeColor;
+      }
+      .searchfile {
+        @apply flex items-center gap-x-1;
+        .icons {
+          @apply text-white text-xl lg:text-3xl cursor-pointer hover:text-themeColor;
+        }
+        input {
+          @apply hidden md:flex w-full border-none outline-none h-full bg-transparent py-2 text-white;
+        }
+      }
+    }
+    .center {
+      @apply flex space-x-3 lg:space-x-10 pt-2 lg:pt-0;
+      .icon {
+        @apply text-white text-xl lg:text-2xl cursor-pointer hover:text-themeColor;
+      }
+    }
+    .right {
+      @apply flex items-center gap-x-2 pt-1 lg:pt-0;
+      .profile {
+        @apply flex items-center gap-x-1 pt-1;
+        .pic {
+          @apply rounded-3xl;
+        }
+        .name {
+          @apply hidden lg:flex text-white text-2xl;
+        }
+      }
+      .notification {
+        @apply hidden lg:flex lg:w-10 lg:h-10 rounded-full bg-green-800  items-center justify-center;
+        .icons {
+          @apply text-white text-xl cursor-pointer hover:text-themeColor;
+        }
+      }
+      .menu {
+        @apply w-7 h-7 lg:w-10 lg:h-10 rounded-full bg-green-800 flex items-center justify-center;
+        .icons {
+          @apply text-white text-xl cursor-pointer hover:text-themeColor;
+        }
+      }
+    }
+  }
+}
