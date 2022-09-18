@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }) {
   const connectors = {
     injected: {},
   };
+  //
   return (
     <>
       <ThirdwebWeb3Provider
