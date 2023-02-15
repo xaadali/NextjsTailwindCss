@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
             <div className={styles.addressinfo}>
               <label>Lahore Office</label>
-              <span>+92 0300 1418889</span>
+              <span>+92 304 1144381</span>
               <p>
                 31b J3, opposite to Expo, next to Kumail`s Hotel, Johar Town,
                 Lahore, 54782
