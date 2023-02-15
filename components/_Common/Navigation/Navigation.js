@@ -67,11 +67,11 @@ const Navigation = () => {
             </div>
             <div
               className={
-                router.pathname === "/" ? styles.active : styles.inactive
+                router.pathname === "/sign-in" ? styles.active : styles.inactive
               }
             >
               <div className={styles.item}>
-                <Link href="/" className={styles.text}>
+                <Link href="/sign-in" className={styles.text}>
                   Login
                 </Link>
                 <div className={styles.activebar}></div>
@@ -83,11 +83,11 @@ const Navigation = () => {
               onClick={() => {
                 window.ethereum === undefined
                   ? window
-                      .open(
-                        "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en",
-                        "_blank"
-                      )
-                      .focus()
+                    .open(
+                      "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en",
+                      "_blank"
+                    )
+                    .focus()
                   : connectWallet("injected");
               }}
             >
@@ -100,8 +100,8 @@ const Navigation = () => {
               <span>
                 {address
                   ? `${address.substring(0, 6)}...${address.substring(
-                      address.length - 4
-                    )}`
+                    address.length - 4
+                  )}`
                   : "Connect MetaMask"}
               </span>
             </button>

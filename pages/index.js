@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Home from "../components/Home/Home";
-import Signin from "../components/SignIn/signIn";
 import Layout from "../components/Layout/Layout";
 export default function App() {
   return (
@@ -11,7 +10,7 @@ export default function App() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <Signin />
+        <Home />
       </Layout>
     </>
   );
